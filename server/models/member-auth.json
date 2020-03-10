@@ -19,7 +19,7 @@
       "type": "string"
     },
     "role": {
-      "type" : "string"
+      "type": "string"
     },
     "mobile_no": {
       "type": "number"
@@ -28,5 +28,17 @@
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": {}
+  "methods": {
+    "prototype.makeAdmin": {
+      "accepts": [],
+      "returns": [],
+      "description": "change authorization role",
+      "http": [
+        {
+          "http": "/makeAdmin",
+          "verb": "post"
+        }
+      ]
+    }
+  }
 }

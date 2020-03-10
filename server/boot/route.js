@@ -5,8 +5,9 @@ const memberAuth = app.models.member_auth;
 const User = app.models.user
 const Role = app.models.Role;
 const RoleMapping = app.models.RoleMapping;
-const Team = app.models.Team;
+  const Team = app.models.Team;
 
+  console.log('memberAuth inside route js >>>>>>>>>>>>>>', memberAuth);
     app.post('/login', function(req, res) {
         memberAuth.login({
           email: req.body.email,

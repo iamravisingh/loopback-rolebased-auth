@@ -1,13 +1,21 @@
 module.exports = (app) => {
-    const memberAuth = app.models.member_auth;
+    const members = app.models.members;
     const Role = app.models.Role;
     const RoleMapping = app.models.RoleMapping;
     const Team = app.models.Team;
 
-    
-    memberAuth.create([
-        {username: 'iamravisingh', email: 'ravi@gmail.com', password: 'tatabyebye',role : "superadmin"},
-      ], function(err, members) {
+  const userData = {
+      username: 'iamravisingh',
+      firstName: "ravi",
+      lastName : "singh",
+      email: 'ravi@gmail.com',
+      password: 'tatabyebye',
+      role: "superadmin",
+  }
+  
+  console.log('members before Adding the data>>>>>>>>>>', members());
+  return
+    members.create([userData], function(err, members) {
         if (err) return err;
         console.log('callback function invoked members>>>>>>>>>>>>..',members)
         //create the admin role

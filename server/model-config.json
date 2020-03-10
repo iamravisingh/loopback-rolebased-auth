@@ -14,7 +14,8 @@
     ]
   },
   "User": {
-    "dataSource": "mongodbDs"
+    "dataSource": "mongodbDs",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "mongodbDs",
@@ -36,6 +37,10 @@
     "public": false
   },
   "member_auth": {
+    "dataSource": "mongodbDs",
+    "public": true
+  },
+  "members": {
     "dataSource": "mongodbDs",
     "public": true
   }

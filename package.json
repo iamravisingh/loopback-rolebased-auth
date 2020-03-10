@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint",
-    "autoupdate" : "node bin/autoupdate.js"
+    "autoupdate": "node bin/autoupdate.js"
   },
   "dependencies": {
     "compression": "^1.0.3",
