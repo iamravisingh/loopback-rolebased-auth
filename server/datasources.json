@@ -1,0 +1,6 @@
+{
+  "mongodbDs": {
+    "url": "mongodb+srv://iamravisingh:tatabyebye@cluster0-2uaj0.mongodb.net/members",
+    "connector": "mongodb"
+  }
+}
