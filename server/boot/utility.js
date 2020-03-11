@@ -16,17 +16,6 @@ module.exports = {
                             this.updateRole(members,result,"admin")
                             return resolve(cb.value);
                         })
-                        // collection.updateOne({ email }, { $set: { role: "fdfdfd" } }, (err, updateCb) => {
-                        //     console.log('updateCb>>>>>>>>>>>', updateCb);
-                        //     // updateCb.toArray()   
-                        //     if (result.role.toLowerCase() == "admin") {
-                        //         return result = {
-                        //             status : "UnAuthorized"
-                        //         }
-                        //     }
-                        //     // updateRole(members, result);
-                        // })
-                        // return resolve(result);
                     });
                 });
             })
