@@ -38,7 +38,7 @@
   },
   "member_auth": {
     "dataSource": "mongodbDs",
-    "public": true
+    "public": false
   },
   "members": {
     "dataSource": "mongodbDs",
