@@ -27,7 +27,15 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": ""
+    }
+  ],
   "methods": {
     "prototype.makeAdmin": {
       "accepts": [],

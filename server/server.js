@@ -7,8 +7,14 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+const utility = require('./boot/utility');
+const bodyParser = require('body-parser');
 
 const app = module.exports = loopback();
+
+// configure body parser
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.start = function() {
   // start the web server
